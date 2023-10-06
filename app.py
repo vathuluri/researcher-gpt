@@ -174,16 +174,16 @@ agent = initialize_agent(
     memory=memory,
 )
 
-
-
-# 4. Use streamlit to create a web app
-def main():
-    hide_streamlit_style = """
+hide_streamlit_style = """
             <style>
             [data-testid="stToolbar"] {visibility: hidden !important;}
             footer {visibility: hidden !important;}
             </style>
             """
+
+# 4. Use streamlit to create a web app
+def main():
+    
     st.markdown(hide_streamlit_style, unsafe_allow_html=True)
     st.set_page_config(page_title="AI research agent", page_icon=":agent:", initial_sidebar_state="expanded",
     menu_items={
