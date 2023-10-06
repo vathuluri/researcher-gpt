@@ -174,6 +174,13 @@ agent = initialize_agent(
     memory=memory,
 )
 
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+
 # 4. Use streamlit to create a web app
 def main():
     
