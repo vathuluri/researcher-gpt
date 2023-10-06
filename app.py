@@ -179,6 +179,7 @@ hide_streamlit_style = """
             #stToolbar {visibility: hidden;}
             #MainMenu {visibility: hidden;}
             footer {visibility: hidden;}
+            header {visibility: hidden;}
             </style>
             """
 
@@ -191,7 +192,7 @@ def main():
     })
 
     st.header("AI researcher :agent:")
-    #st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+    st.markdown(hide_streamlit_style, unsafe_allow_html=True)
     query = st.text_input("Research goal")
 
     if query:
