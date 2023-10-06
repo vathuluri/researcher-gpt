@@ -176,7 +176,6 @@ agent = initialize_agent(
 
 hide_streamlit_style = """
             <style>
-            #stToolbar {visibility: hidden;}
             #MainMenu {visibility: hidden;}
             footer {visibility: hidden;}
             header {visibility: hidden;}
