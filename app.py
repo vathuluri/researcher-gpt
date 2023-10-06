@@ -174,7 +174,7 @@ agent = initialize_agent(
 
 # 4. Use streamlit to create a web app
 def main():
-    st.set_page_config(page_title="AI research agent", page_icon=":bird:")
+    st.set_page_config(page_title="AI research agent", page_icon=":agent:")
 
     st.header("AI researcher :bird:")
     query = st.text_input("Research goal")
