@@ -23,6 +23,9 @@ load_dotenv()
 brwoserless_api_key = os.getenv("BROWSERLESS_API_KEY")
 serper_api_key = os.getenv("SERP_API_KEY")
 
+
+
+
 # 1. Tool for search
 
 
@@ -174,7 +177,10 @@ agent = initialize_agent(
 
 # 4. Use streamlit to create a web app
 def main():
-    st.set_page_config(page_title="AI research agent", page_icon=":agent:")
+    st.set_page_config(page_title="AI research agent", page_icon=":agent:", initial_sidebar_state="expanded",
+    menu_items={
+        'Get Help': 'https://www.extremelycoolapp.com/help'        
+    })
 
     st.header("AI researcher :agent:")
     query = st.text_input("Research goal")
