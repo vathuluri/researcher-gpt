@@ -176,7 +176,7 @@ agent = initialize_agent(
 def main():
     st.set_page_config(page_title="AI research agent", page_icon=":bird:")
 
-    st.header("AI research agent :bird:")
+    st.header("AI researcher :bird:")
     query = st.text_input("Research goal")
 
     if query:
