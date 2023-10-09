@@ -190,9 +190,9 @@ def main():
         'Get Help': 'https://www.extremelycoolapp.com/help'        
     })
 
-    st.header("Autogen researcher :agent:")
+    st.header("I am your AI researcher :agent:")
     st.markdown(hide_streamlit_style, unsafe_allow_html=True)
-    query = st.text_input("Research goal")
+    query = st.text_input("I am your AI researcher :agent: my goal is to do my best to research whats on your mind and present it with consumable chucks and provide relevant links.")
 
     if query:
         st.write("Doing research for ", query)
