@@ -195,7 +195,7 @@ def main():
     query = st.text_input("I'm your Researcher! 🤖 my goal is to deliver concise research, digestible info, and relevant links..")
 
     if query:
-        st.write("Doing research for ", query)
+        st.write("Doing research - Please be patience. I will be back with my findings on  ", query)
 
         result = agent({"input": query})
 
