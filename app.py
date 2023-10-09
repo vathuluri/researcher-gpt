@@ -192,7 +192,7 @@ def main():
 
     st.header("I am your AI researcher :agent:")
     st.markdown(hide_streamlit_style, unsafe_allow_html=True)
-    query = st.text_input("I'm your Researcher! 🤖 my goal is to Delivers concise research, digestible info, and relevant links..")
+    query = st.text_input("I'm your Researcher! 🤖 my goal is to deliver concise research, digestible info, and relevant links..")
 
     if query:
         st.write("Doing research for ", query)
